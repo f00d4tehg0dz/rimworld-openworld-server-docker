@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  rimworld-openworld-server:
+    image: f00d4tehg0dz/rimworld-openworld-server:latest
+    container_name: rimworld-openworld-server
+    ports:
+      - "25555:25555/tcp"  
+      - "25555:25555/udp" 
+    volumes:
+      - Rimworld:/rimworld:rw
+    environment:
+      - BITNAMI_APP_NAME=dotnet
+      - BITNAMI_IMAGE_VERSION=3.1.9-debian-10-r54
+      - DOTNET_CLI_HOME=/app
+    restart: unless-stopped
