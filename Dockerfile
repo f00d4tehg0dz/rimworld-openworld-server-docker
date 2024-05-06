@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/dotnet/sdk:3.1
-LABEL maintainer="Bitnami <containers@bitnami.com>"
+LABEL maintainer="f00d4tehg0dz <adrianvfx@gmail.com>"
 
 ENV HOME=/app \
     OS_ARCH=amd64 \
